@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.digit {
+    background-color: black;
+    color: red;
+}
+
+.container {
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    border: red;
+}
