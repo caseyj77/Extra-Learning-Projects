@@ -6,11 +6,12 @@
 .digit {
     background-color: aliceblue;
     color: red;
+    font-size: xx-large;
 }
 
 .container {
     height: 100px;
-    width: 100px;
+    width:  auto;
     border-radius: 25px;
     border: red;
     
