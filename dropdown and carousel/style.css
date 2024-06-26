@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    gap: 50px; /* Gap between buttons */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-options {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position the dropdown options below the button */
+    left: 0;
+    flex-direction: column; /* Ensure vertical stacking */
+}
+
+.dropdown.visible .dropdown-options, /* Show when visible class is added */
+.dropdown.hover .dropdown-options { /* Show on hover */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for the carousel */
+#carousel-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+}
+
+/* Carousel card to hold images */
+#carousel-card {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Each image in the carousel */
+#carousel-card img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Left and right navigation arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+/* Navigation circles (pagination) */
+.carousel-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-pagination .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.carousel-pagination .circle.active {
+    background-color: #E25822;
+}
+
